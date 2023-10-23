@@ -1,7 +1,28 @@
+const word = "a";
+
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  // program to check if the string is palindrome or not
 
+ 
+
+  // find the length of a string
+  const len = word.length;
+
+  // loop through half of the string
+  for (let i = 0; i < len / 2; i++) {
+
+      // check if first and last string are same
+      if (word[i] !== word[len - 1 - i]) {
+          return false;
+      }
+  }
+  return true;
+
+}
+const value = isPalindrome(word);
+
+console.log(value);
 /* 
   Add your pseudocode here
 */
